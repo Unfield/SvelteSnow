@@ -1,23 +1,23 @@
-
 # Svelte Snow
-
 
 #### Properties
 
-| Parameter | Type     | Description                |
-| :- | :- | :- |
-| `active` | `boolean` | **Optional**. Enables/Disables the rendering of snowflakes |
+| Parameter      | Type            | Description                                                                            |
+| :------------- | :-------------- | :------------------------------------------------------------------------------------- |
+| `active`       | `boolean`       | **Optional**. Enables/Disables the rendering of snowflakes                             |
 | `activeMonths` | `Array<Number>` | **Optional**. Enables/Disables the rendering of snowflakes based on the specific month |
 
 `activeMonths` only applies if active is set to `true`
 
 `activeMonths={[ 1 ]} = January and so on.`
+
 ## Usage/Examples
 
 #### Always Snowing
+
 ```javascript
 <script>
-import SvelteSnow from "SvelteSnow";
+    import SvelteSnow from "svelte-snow";
 </script>
 
 <SvelteSnow>
@@ -26,9 +26,10 @@ import SvelteSnow from "SvelteSnow";
 ```
 
 #### Snow Disabled
+
 ```javascript
 <script>
-import SvelteSnow from "SvelteSnow";
+    import SvelteSnow from "svelte-snow";
 </script>
 
 <SvelteSnow active={false}>
@@ -37,13 +38,13 @@ import SvelteSnow from "SvelteSnow";
 ```
 
 #### Snowing from December till February
+
 ```javascript
 <script>
-import SvelteSnow from "SvelteSnow";
+    import SvelteSnow from "svelte-snow";
 </script>
 
 <SvelteSnow activeMonths={[ 1, 2, 12 ]}>
     <!-- your content goes here -->
 </SvelteSnow>
 ```
-
